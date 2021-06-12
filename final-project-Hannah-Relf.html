@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macramé</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+        padding: 10px auto;
+      }
+      div {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+        display: block;
+        margin: 50px auto;
+        max-width: 60%;
+      }
+      h1 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 40px;
+        margin-top: 30px;
+        padding-top: 20px;
+        padding-right: auto;
+        padding-bottom: 0;
+        padding-left: auto;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+      }
+
+      .mainParagraph {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: 30px;
+        text-align: center;
+      }
+      .examples {
+        color: #74b49b;
+      }
+
+      ul {
+        padding: 0;
+        list-style: square;
+      }
+
+      li {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: 0 70px;
+      }
+
+      a {
+        color: #5c8d89;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .moreInfo {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 12px;
+        margin: 30px;
+        text-align: left;
+      }
+
+      .subscribe-button {
+        background: #5c8d89;
+        border: solid 2px #5c8d89;
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        color: #d3f6d1;
+        display: block;
+        padding: 10px 15px;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin: 0 auto;
+        transition: all 100ms ease-in-out;
+      }
+
+      .subscribe-button:hover {
+        cursor: pointer;
+        opacity: 75%;
+      }
+
+      .newsletter {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-style: italic;
+        text-align: center;
+      }
+      .footer {
+        color: rgba(0, 0, 0, 0.5);
+        font-family: monospace;
+        font-size: 11px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Macramé</h1>
+      <h2><em>..the knotting art-form that keeps coming back</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/220/original/macrame-pots.jpg?1617304744"
+        alt="macrame plant holders"
+      />
+      <p class="mainParagraph">
+        Macrame is a technique or method of crafting a textile that uses several
+        knots to form the basic shape and function of the piece. Since this art
+        form has regained popularity in recent years, crafters and artists are
+        coming up with innovative ways to take macrame beyond the basic
+        <span class="examples">plant hangers</span> and
+        <span class="examples">wall hangings</span>.<br /><br />
+        This age-old practice has gone in and out of popularity for thousands of
+        years. However, this method will always be around to some degree because
+        of its practicality. Remarkably, you can make items like table runners
+        and key chains using just your hands and a couple of inexpensive
+        supplies, which may include:
+      </p>
+
+      <ul>
+        <li>Jute</li>
+        <li>Twine</li>
+        <li>Yarn</li>
+        <li>Hemp</li>
+        <li>Leather</li>
+        <li>Mounting Rings</li>
+        <li>Wooden Beads</li>
+      </ul>
+
+      <p class="moreInfo">
+        <a
+          href="https://www.thesprucecrafts.com/what-is-macrame-4770893"
+          target="_blank"
+          >Click Here</a
+        >
+        to find out more
+      </p>
+
+      <hr />
+
+      <p class="newsletter">
+        Subscribe below to get <strong>free</strong> patterns
+      </p>
+      <button class="subscribe-button">Subscribe</button>
+      <br />
+      <p class="footer">Coded by <strong>Hannah Relf</strong></p>
+    </div>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your Email address?");
+        alert(
+          "Thank you, " +
+            name +
+            "! You'll receive your first free pattern shortly ☺️"
+        );
+      }
+
+      let subscribeButton = document.querySelector(".subscribe-button");
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
